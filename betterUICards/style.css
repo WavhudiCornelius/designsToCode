@@ -30,6 +30,7 @@ body {
     justify-content: center;
     align-items: center;
     background: var(--background-color);
+    font-family: 'Poppins', sans-serif;
     /*background: #171717;*/
 }
 
@@ -47,7 +48,7 @@ input[type="checkbox"] {
     display: block;
     width: 150px;
     height: 55px;
-    background-color: rgb(241, 161, 12);
+    background-color: #CECDC7;
     border-radius: 50px;
     cursor: pointer;
 }
@@ -66,6 +67,14 @@ input[type="checkbox"] {
     transition: 0.4s ease left, 0.4s ease background-position;
     z-index: 2;
 }
+
+.bi-brightness-high-fill {
+    color: #FFD700;
+}
+
+/*.bi-moon-fill {*/
+/*    color: ;*/
+/*}*/
 
 .toggle:checked + .switch .circle {
     left: 100px;
@@ -145,7 +154,6 @@ input[type="checkbox"] {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 8px;
 }
 
 .title {
@@ -157,7 +165,7 @@ input[type="checkbox"] {
 
 .reviewContainer {
     display: flex;
-    font-weight: 500;
+    /*font-weight: 500;*/
     width: 78px;
     justify-content: space-between;
     color: var(--text-color);
@@ -172,9 +180,8 @@ input[type="checkbox"] {
 }
 
 .description {
-    font-size: 18px;
     color: #777;
-    margin-bottom: 8px;
+    /*margin-bottom: 8px;*/
 }
 
 .extraInfoContainer {
@@ -182,14 +189,13 @@ input[type="checkbox"] {
     width: 180px;
     justify-content: space-between;
     align-items: center;
-    font-size: 16px;
-    font-weight: 500;
     color: var(--text-color);
 }
 
 .weeklyRate {
     color: #777;
 }
+
 
 .dotSeparator {
     height: 5px;
