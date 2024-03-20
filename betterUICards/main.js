@@ -9,6 +9,14 @@ document.addEventListener("DOMContentLoaded", function() {
     toggleBtn.addEventListener("click", function() {
         moonIcon.classList.toggle("d-none");
         sunIcon.classList.toggle("d-none");
+
+        const currentTheme = document.body.getAttribute('data-theme');
+        console.log('This is the current theme: ', currentTheme)
+        if (currentTheme === 'dark') {
+            document.body.setAttribute('data-theme', 'light');
+        } else {
+            document.body.setAttribute('data-theme', 'dark');
+        }
     });
 
     // Create dots for each image
